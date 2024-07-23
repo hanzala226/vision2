@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%
+    ;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 11;
+    mix-blend-mode: difference;
+}
+nav img{
+    margin: 2% 5%;
+    
+}
+nav ul{
+    float: right;
+    display: flex;
+    gap: 30px;
+    line-height: 80px;
+margin-right:5%;
+}
+nav ul li a{
+    color: #ffff;
+    font-size: .7rem;
+    position: relative;
+    font-family: poppins;
+} nav a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px ;
+    background-color: white;
+    top: 14px;
+    scale: 0;
+    left: 0%;
+    transition: .3s;
+    bottom: 2px;
+}
+nav a:hover::before{
+    scale: 1;
+}
+.home{
+    width: 100%;
+ 
+    height: 100vh;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.video-container .heading{
+    width: 100%;
+    height: 250px;
+ position:absolute ;
+  top: 15%;
+z-index: 10;
+    background-color: rgba(0, 0, 0, 0);
+}
+.h1{
+    color: rgb(255, 255, 255);
+    font-size: 13rem;
+    font-weight: 0;
+    letter-spacing: -8px;
+    font-family:  poppins;
+  margin-left: 1%;
+}
+body{
+    overflow-x: hidden;
+}
+.h2{margin-left: 1%;
+    top: -150px;
+    color: rgb(255, 252, 252);
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    font-size: 13rem;
+    font-weight: 0;
+    letter-spacing: -8px;
+
+mix-blend-mode: difference;
+   align-items: center;
+height: 200px;
+white-space: nowrap;
+    font-family:  poppins;
+}
+.s1{
+    position: relative;
+    animation: s1 linear forwards .7s;
+    bottom: -50px;
+
+}
+/* @keyframes s1 {
+    0%{
+        bottom: -150px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0px;
+        opacity: 1;
+    }
+} */
+.h2 .s2{
+    bottom: -40px;
+    position: relative; animation: s2 linear forwards .6s;
+  animation-delay: .8s;
+}
+/* @keyframes s2 {
+    0%{
+        opacity: 0;
+        bottom: -220px;
+    }
+    100%{
+        bottom: 10px;
+        opacity: 1;
+    }
+} */
+.h2 .s3{
+bottom: -40px;
+margin-left: 20px;
+  position: relative; animation: s3 linear forwards ;animation-delay: 1s;
+  animation-duration: .6s;
+
+}
+/* @keyframes s3 {
+    0%{
+        bottom: -220px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 10px;
+        opacity: 1;
+    }
+} */
+
+.video-container{
+    width: 100%;
+    height: 100vh;
+   
+    
+   
+    
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+video{
+    opacity: .3;
+  background-position: center;
+  background-size: cover;
+    position: relative;
+}
+.page2{
+    width: 100%;
+min-height: 100vh;
+z-index: 2;
+ background-color: rgba(60, 255, 0, 0);   
+}
+
+#cursor {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0);
+   
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 10;
+    mix-blend-mode: difference;
+    pointer-events: none; /* Ensure cursor doesn't interfere with element hover states */
+    transition: transform 0.3s ease; /* Smooth transition for scale */
+}
+
+.over{
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    top: 40%;
+    position: absolute;
+    background-color: #ffffff;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.page2 .i{
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: rgb(255, 255, 255);
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.text2{
+    width: 100%;
+  
+    display: flex;
+    position: relative;
+    background-color: rgba(255, 0, 0, 0);
+    padding-top: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 12;
+
+
+}
+.text2 .t1{
+    rotate: 0deg;
+}
+.text2 .t2{
+    rotate: 0deg;
+}
+.text2 h4 span{
+    color: transparent;
+    -webkit-text-stroke: 1.3px black;
+}
+.text2 h4{
+   white-space: nowrap;
+    font-size: 3rem;
+      padding: 20px 0px;
+
+    font-family: poppins;
+}
+.line{
+    width: 20%;
+   min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.img1{
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0);
+}
+.img2{
+    width: 100%;
+    overflow: hidden;
+
+    height: 30%;
+    background-color: rgba(255, 0, 0, 0);
+}
+.img3{
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+
+    background-color: rgba(255, 0, 0, 0);
+}
+.img1 img{
+    scale: 1.5;
+    pointer-events: none;
+}
+.img2 img{
+    scale: 1.3;
+}
+.img3 img{
+    scale: 1.3;
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 1;
+}
+.page3-transparent{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0);
+}
+.page4{
+    width: 100%;background-color: white;
+    height: 100vh
+    ;
+
+}
+.pagen{
+    width: 100%;background-color: white;
+    height: 100vh
+    ;
+
+}
+#main{
+    position: relative;
+}
+.t1{
+    font-weight: 200;
+}
+.upage{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+}
+*::selection{
+    background-color: black;
+    color:  silver;
+}
+h3{
+    color: white;
+    left: 30%;
+    top: 30%;
+    position: relative;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
